@@ -235,6 +235,7 @@ button{
 .download-section{
   margin: 50px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -304,7 +305,12 @@ input{
 
 
 @media screen and (max-width: 720px) {
-  
+  body{
+    /* width: 720px; */
+  }
+
+  /* NAV */
+
   .nav-item{
     font-size: 12px;
   }
@@ -332,16 +338,19 @@ input{
   header{
     display: flex;
     height: 485px;
-    width: 695px;
+    width: 700px;
     margin-bottom: 70px;
   }
 
   .header-image{
+    width: 330px;
+  }
+
+  header>div:nth-of-type(3){
     position: relative;
     
-    left: -297px;
-    top: 280px;
-    width: 330px;
+      left: -315px;
+      top: 190px;
   }
   
   .header-text{
@@ -411,7 +420,63 @@ input{
     margin-top: 50px;
   }
 
-  
 
+  /* FAQ SECTION */
+
+  .faq-section{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: flex-end;
+  }
+
+  .faq-image img{
+    width: 500px;
+  }
+
+  .faq-content h2{
+    font-size: 34px;
+  }
+
+  .faq-content h4{
+    font-size: 16px;
+  }
+
+  .faq-content{
+    align-self: flex-start;
+    order: 2;
+  }
+
+  .download-section{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  .download-content{
+    margin: auto;
+  }
+
+  /* FOOTER */
+
+  .footer-section{
+    width: 600px;
+
+  }
+
+  .list-items{
+    font-size: 15px;
+  }
+
+  .list{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-right>div{
+    position: relative;
+    right: 40px;
+  }
 
 }
