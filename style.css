@@ -54,6 +54,8 @@ nav{
   /* padding: 4px 15px; */
   /* border-radius: 2px; */
   cursor: pointer;
+  transition: ease-in-out;
+  transition-duration: 200ms;
 
 }
 
@@ -136,6 +138,8 @@ a{
 .card:hover, .card-active:hover{
   background-color: #FFFFFF;
   box-shadow: 10px 10px 50px #00000024;
+  transition: ease-in-out;
+  transition-duration: 200ms;
 }
 
 .cards::after{
@@ -313,6 +317,8 @@ input{
 .list-items:hover{
   cursor: pointer;
   color: #000000;
+  transition: ease-in-out;
+  transition-duration: 200ms;
 }
 
 .footer-logos{
