@@ -45,6 +45,20 @@ nav{
   background-color: #FFFFFF;
   padding: 4px 15px;
   border-radius: 2px;
+  cursor: pointer;
+}
+
+.nav-item:hover{
+  color: #000000;
+  /* background-color: #FFFFFF; */
+  /* padding: 4px 15px; */
+  /* border-radius: 2px; */
+  cursor: pointer;
+
+}
+
+button{
+  cursor: pointer;
 }
 
 .header-image{
@@ -108,14 +122,20 @@ a{
   justify-content: space-evenly;
 }
 
-.card-active{
+/* .card-active{
   background-color: #FFFFFF;
   box-shadow: 10px 10px  50px #00000024;
-}
+} */
 
 .card, .card-active{
   padding: 30px 20px;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.card:hover, .card-active:hover{
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 50px #00000024;
 }
 
 .cards::after{
@@ -145,7 +165,7 @@ a{
   display: flex;
   /* justify-content: ; */
   /* align-items: flex-end; */
-
+  cursor: pointer;
   box-shadow: 0px 10px 10px #00000024;
   width: 650px;
   border-radius: 10px;
@@ -290,8 +310,17 @@ input{
   
 }
 
+.list-items:hover{
+  cursor: pointer;
+  color: #000000;
+}
+
 .footer-logos{
   margin-right: 20px;
+}
+
+.footer-logos:hover{
+  cursor: pointer;
 }
 
 .footer-right{
@@ -302,6 +331,8 @@ input{
   position: relative;
   left: 60px;
 }
+
+
 
 
 @media screen and (max-width: 720px) {
